@@ -1,0 +1,63 @@
+#slider {
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#slider #btnLeft, #slider #btnRight {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#slider #btnLeft {
+  left: 10px;
+}
+
+#slider #btnRight {
+  right: 10px;
+}
+
+#slider .slide {
+  height: 90vh;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-transform: scale(3);
+          transform: scale(3);
+}
+
+#slider .slide.active {
+  opacity: 1;
+  visibility: visible;
+  left: 0;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+#slider .slide:nth-child(1) {
+  background: url(../photo/Fall.png);
+  background-size: cover;
+}
+
+#slider .slide:nth-child(2) {
+  background: url(../photo/15402_00-2019-11-15-0322.jpg);
+  background-size: cover;
+}
+
+#slider .slide:nth-child(3) {
+  background: url(../photo/cff6fc083deccf0e230a31e56715ae23.jpg);
+  background-size: cover;
+}
+
+#slider .slide:nth-child(4) {
+  background: url(../photo/Screen_Shot_2018-01-12_at_9.47.28_AM.webp);
+  background-size: cover;
+}
+/*# sourceMappingURL=style.css.map */
